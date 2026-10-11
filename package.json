@@ -1,0 +1,51 @@
+{
+  "name": "@ruledwdl/react",
+  "version": "0.1.0",
+  "description": "React components and wrappers for RuledWDL. Uses @ruledwdl/core to produce React elements from REGISTRY + COMPONENTS + DATA.",
+  "license": "AGPL-3.0-or-later",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "dependencies": {
+    "@ruledwdl/core": "^0.3.5",
+    "html-react-parser": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "typescript": "^5.5.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruledweb/ruledwdl-react.git"
+  },
+  "keywords": [
+    "wdl",
+    "ruledwdl",
+    "react",
+    "web-definition-language"
+  ],
+  "author": "Pradeep Dabane <pradeep@ruledweb.com>",
+  "publishConfig": {
+    "access": "public"
+  }
+}
